@@ -145,7 +145,8 @@ var maleCostumeArray = ['doctor',
 				   'caveman',
 				   'Batman',
 				   'Spiderman',
-				   'merman'
+				   'merman',
+				   'T-Rex'
 ]
 
 var femaleCostumeArray = ['doctor',
@@ -196,7 +197,8 @@ var femaleCostumeArray = ['doctor',
 				   'nurse',
 				   'fairy',
 				   'cheerleader',
-				   'mermaid'
+				   'mermaid', 
+				   'triceratops'
 ]
 
 var maleAdj = maleAdjArray[Math.floor(Math.random() * maleAdjArray.length)]
@@ -214,3 +216,6 @@ function showMaleRand() {
 	document.getElementById('maleRand').style.display = "block";
 }
 
+function showFemaleRand() {
+	document.getElementById('femaleRand').style.display = "block";
+}

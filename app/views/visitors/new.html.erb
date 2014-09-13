@@ -3,8 +3,16 @@
 <p class="center">Are you a guy or a girl?</p>
 
 <div style="text-align:center;">
-    <button type="button" value="Show maleRand" onclick="showMaleRand()">Dude</button>
-    <button type="button">Chick</button>
+    <button type="button" 
+    		id="dude" 
+    		value="Show maleRand" 
+    		onclick="showMaleRand(), chick.style.visibility='hidden', this.style.visibility='hidden', loading.style.visibility='visible'">
+    Dude</button>
+    <button type="button" 
+    		id="chick" 
+    		value="Show femaleRand" 
+    		onclick="showFemaleRand(), dude.style.visibility='hidden', this.style.visibility='hidden', loading.style.visibility='visible'">
+    Chick</button>
 </div>
 
 <div id="maleRand" style="display:none;">
@@ -13,12 +21,14 @@
 	</script>
 </div>
 
-<!--<div>
+<div id="femaleRand" style="display:none;">
 	<script>
 		document.write(femaleClick);
 	</script>
-</div>-->
-
+</div>
 <div style="text-align:center;">
-    <button type="button">Screw that!</button>
+    <button type="button"
+    		id="redo"
+    		value="Refresh page"
+    		onClick="history.go(0)">Screw that! Give me something else.</button>
 </div>
