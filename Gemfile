@@ -4,8 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -38,3 +36,24 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'activerecord-tableless'
+gem 'compass-rails', '~> 2.0.alpha.0' 
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'zurb-foundation'
+gem 'binding_of_caller'
+
+group :development do
+	gem 'better_errors' 
+	gem 'quiet_assets' 
+	gem 'rails_layout'
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'rails_12factor'
+	gem 'thin'
+end
