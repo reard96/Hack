@@ -3,27 +3,22 @@
 <p class="center">Are you a guy or a girl?</p>
 
 <div style="text-align:center;">
-    <button type="button">Dude</button>
+    <button type="button" value="Show maleRand" onclick="showMaleRand()">Dude</button>
     <button type="button">Chick</button>
 </div>
 
-<div>
+<div id="maleRand" style="display:none;">
 	<script>
 		document.write(maleClick);
 	</script>
 </div>
 
-<div>
+<!--<div>
 	<script>
 		document.write(femaleClick);
 	</script>
-</div>
+</div>-->
 
 <div style="text-align:center;">
     <button type="button">Screw that!</button>
 </div>
-
-
-<!--p>Welcome to the home of <%= @owner.name %>.</p>
-<p>I was born on <%= @owner.birthdate %>.</p>
-<p>Only <%= @owner.countdown %> days until my birthday!</p>-->

@@ -210,3 +210,7 @@ var femaleCostume = femaleCostumeArray[Math.floor(Math.random() * femaleCostumeA
 maleClick = (maleAdj + ' ' + maleCostume)
 femaleClick = (femaleAdj + ' ' + femaleCostume)
 
+function showMaleRand() {
+	document.getElementById('maleRand').style.display = "block";
+}
+
