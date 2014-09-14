@@ -214,8 +214,10 @@ femaleClick = (femaleAdj + ' ' + femaleCostume)
 
 function showMaleRand() {
 	document.getElementById('maleRand').style.display = "block";
+	document.getElementById('redo').style.visibility='visible';
 }
 
 function showFemaleRand() {
 	document.getElementById('femaleRand').style.display = "block";
+	document.getElementById('redo').style.visibility='visible';
 }
